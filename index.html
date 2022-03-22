@@ -1,78 +1,647 @@
 <!DOCTYPE html>
-<html>
-<title>Gaga Burdur</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="assets/qwe.css">
-<style>
-html{scroll-behavior:smooth}
-</style>
-
+<html lang="tr">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href ="css/colorbox.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gaGa Burdur</title>
+</head>
 <body>
-<body style="background-color:#363537;"></body>
-  
-<nav class="navbar">
-    <div class="navbar-container container">
-        <input type="checkbox" name="" id="">
-        <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-        </div>
-        <ul class="menu-items">
-            <li><a href="#landing">Ana Sayfa</a></li>
-            <li><a href="#burgers">Burgerler</a></li>
-            <li><a href="#toasts">Tostlar</a></li>
-            <li><a href="#sandwich">Sandviçler</a></li>
-            <li><a href="#appetizer">Aperatifler</a></li>
-            <li><a href="#hotdrink">Sıcak İçecekler</a></li>
-            <li><a href="#colddrink">Soğuk İçecekler</a></li>
+    <a href="#navigation" id="goTop" title="Go to top"><img src="images/icons/arrow-up-solid.svg" class="upArrow" style="width: 27px"></a>
+    <header id="navbar"></header> <!-- TODO ADD NAVBAR (OPTIONAL) -->
+    
+    <div class="land" id="landing">
+        <img src="images/logo.svg" class="mainLogo"></img>
+        <h1>MENÜ</h1>
+        <h3 id="phone"><a href="tel:0555-055-6699"><img src="images/icons/phone-solid.svg" class="logo" style="width: 6.5vw;"> 0555-055-6699</a></h3>
+    </div>
+
+    <hr id="navigation">
+    <div class="nav">
+        YİYECEKLER
+        <ul>
+            <a href="#burgers">Burgerler</a>
+            <a href="#chicken">Tavuk Burgerler</a>
+            <a href="#toasts">Tostlar</a>
+            <a href="#sandwich">Sandviçler</a>
+            <a href="#healthy">Sporcu Menüleri</a>
+            <a href="#appetizer">Aparatifler</a>
+        </ul>
+        İÇECEKLER
+        <ul>
+            <a href="#hotdrinks">Sıcak İçecekler</a>
+            <a href="#colddrinks">Soğuk İçecekler</a>
         </ul>
     </div>
-</nav>
-<div class="w3-container">
+    <hr id="newcomers">
+    <div class="menu">
+        <h3>YENİ GELENLER</h3>
+        <div class="urun" id="new">
+            <div class="name"><a href="#chicken">TAVUK BURGERLER <img src="images/icons/arrow-turn-down-solid.svg" class="navLogo"></a></div>
+            <div class="name"><a href="#teriyaki">TERİYAKİ TAVUK TOST <img src="images/icons/arrow-turn-down-solid.svg" class="navLogo"></a></div>
+            <div class="name"><a href="#healthy">SPORCU MENÜLER <img src="images/icons/arrow-turn-down-solid.svg" class="navLogo"></a></div>
+        </div>
+    </div>
 
-    <section id="landing">
-        <img src="images/LANDING.png" alt="Ana Sayfa" style="width:100%">
-    </section>
-	<section id="newcomers">
-		<img src="images/NEWCOMERS.png" alt="Yeni Gelenler" style="width: 100%"
-	</section>
-    <section id="burgers">
-        <img src="images/BURGERS.png" alt="Burgerler" style="width:100%">
-    </section>
-    
-    <section id="toasts">
-        <img src="images/TOASTS.png" alt="Tostlar" style="width:100%">
-    </section>
-        
-    <section id="sandwich">
-        <img src="images/SANDWICH.png" alt="Sandviçler" style="width:100%">
-    </section>
-        
-    <section id="appetizer">
-        <img src="images/APPETIZER.png" alt="Aperatifler" style="width:100%">
-    </section>
-        
-    <section id="hotdrink">
-        <img src="images/HOTDRINKS.png" alt="SicakIcecekler" style="width:100%">
-    </section>
-        
-    <section id="colddrink">
-        <img src="images/COLDDRINKS.png" alt="SogukIcecekler" style="width:100%">
-    </section>
-</div>
+    <hr id="burgers">
+    <div class="menu">
+        <h3>BURGERLER</h3>
+        <div class="urun" id="ham">
+            <div class="content">
+                <div class="name">HAMBURGER</div>
+                <div class="desc">130gr köfte, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">32₺</div>
+        </div>
+        <div class="urun" id="cheese">
+            <div class="content">
+                <div class="name">CHEESEBURGER</div>
+                <div class="desc">130gr köfte, cheddar, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">35₺</div>
+        </div>
+        <div class="urun" id="mexican">
+            <div class="content">
+                <div class="name">MEXICAN BURGER</div>
+                <div class="desc">130gr köfte, jalapeño, acı sos, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">35₺</div>
+        </div>
+        <div class="urun" id="egg">
+            <div class="content">
+                <div class="name">EGG BURGER</div>
+                <div class="desc">130gr köfte, göz yumurta, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">35₺</div>
+        </div>
+        <div class="urun" id="super">
+            <div class="content">
+                <div class="name">SUPERBURGER</div>
+                <div class="desc">130gr köfte, cheddar, karamelize soğan, karamelize mantar, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">37₺</div>
+        </div>
+        <div class="urun" id="dana">
+            <div class="content">
+                <div class="name">DANA FÜME BURGER</div>
+                <div class="desc">130gr köfte, cheddar, füme dana eti, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">40₺</div>
+        </div>
+        <div class="urun" id="fantezi">
+            <div class="content">
+                <div class="name">FANTEZİ BURGER</div>
+                <div class="desc">130gr köfte, cheddar, çemensiz pastırma, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">40₺</div>
+        </div>
+        <div class="urun" id="hawaii">
+            <div class="content">
+                <div class="name">HAWAII BURGER</div>
+                <div class="desc">130gr köfte, cheddar, kızarmış ananas, teriyaki sos, soğan, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">40₺</div>
+        </div>
+        <div class="urun" id="double">
+            <div class="content">
+                <div class="name">DOUBLE BURGER</div>
+                <div class="desc">2 adet 130gr köfte, cheddar, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">46₺</div>
+        </div>
+        <hr>
+        <div class="urun" id="kofte">
+            <div class="content">
+                <div class="name"> EKSTRA KÖFTE</div>
+            </div>
+            <div class="price">12₺</div>
+        </div>
+        <div class="urun" id="sauce">
+            <div class="content">
+                <div class="name">SOSLAR</div>
+                <div class="desc">Barbekü sos, Ranch sos, Acı sos, Ketçap, Mayonez.</div> 
+            </div>
+            <div class="price">2₺</div>
+        </div>
+    </div>
 
-<script>
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-    }
-    
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-    }
-    </script>
-    
+    <hr id="chicken">
+    <div class="menu">
+        <h3>TAVUK BURGERLER</h3>
+        <div class="urun" id="cham">
+            <div class="content">
+                <div class="name">CHICKENBURGER</div>
+                <div class="desc">Tavuk fileto, domates, marul, turşu, ketçap, mayonez.</div>
+            </div>
+            <div class="price">32₺</div>
+        </div>
+        <div class="urun" id="ccheese">
+            <div class="content">
+                <div class="name">CHEESE & CHICKEN BURGER</div>
+                <div class="desc">Tavuk fileto, cheddar, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">35₺</div>
+        </div>
+        <div class="urun" id="cmexican">
+            <div class="content">
+                <div class="name">MEXICAN CHICKENBURGER</div>
+                <div class="desc">Tavuk fileto, jalapeño, acı sos, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">35₺</div>
+        </div>
+        <div class="urun" id="cegg">
+            <div class="content">
+                <div class="name">EGG CHICKENBURGER</div>
+                <div class="desc">Tavuk fileto, göz yumurta, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">35₺</div>
+        </div>
+        <div class="urun" id="csuper">
+            <div class="content">
+                <div class="name">SUPERCHICKEN BURGER</div>
+                <div class="desc">Tavuk fileto, cheddar, karamelize soğan, karamelize mantar, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">37₺</div>
+        </div>
+        <!--
+        <div class="urun" id="cdana">
+            <div class="content">
+                <div class="name">DANA FÜME BURGER</div>
+                <div class="desc">Tavuk fileto, cheddar, füme dana eti, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">40₺</div>
+        </div>
+        -->
+        <div class="urun" id="cfantezi">
+            <div class="content">
+                <div class="name">CHICKEN FANTEZİ BURGER</div>
+                <div class="desc">Tavuk fileto, cheddar, çemensiz pastırma, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">40₺</div>
+        </div>
+        <div class="urun" id="chawaii">
+            <div class="content">
+                <div class="name">CHICKEN HAWAII BURGER</div>
+                <div class="desc">Tavuk fileto, cheddar, kızarmış ananas, teriyaki sos, soğan, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">40₺</div>
+        </div>
+        <div class="urun" id="cdouble">
+            <div class="content">
+                <div class="name">DOUBLE CHICKEN BURGER</div>
+                <div class="desc">2 adet Tavuk fileto, cheddar, domates, marul, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">46₺</div>
+        </div>
+    </div>
 
+    <hr id="toasts">
+    <div class="menu">
+        <h3>TOSTLAR</h3>
+        <div class="urun" id="peynirseven">
+            <div class="content">
+                <div class="name">PEYNİRSEVEN TOST</div>
+                <div class="desc">Kaşar, Ezine peyniri, mozzarella, cheddar, kızarmış kabak, ceviz, domates kurusu.</div> 
+            </div>
+            <div class="price">30₺</div>
+        </div>
+        <div class="urun" id="teriyaki">
+            <div class="content">
+                <div class="name">TERİYAKİ TAVUK TOST</div>
+                <div class="desc">Marine edilmiş jülyen tavuk, kabak, mantar, havuç, soğan, domates, özel sos.</div> 
+                <div class="desc"><img src="images/icons/clock-solid.svg" class="descLogo"> Hazırlanma süresi 20-25 dakikadır.</div> 
+            </div>
+            <div class="price">32₺</div>
+        </div>
+        <div class="urun" id="patso">
+            <div class="content">
+                <div class="name">PATSO</div>
+                <div class="desc">Patates, sosis, mozzarella, ketçap, mayonez, turşu.</div> 
+            </div>
+            <div class="price">29₺</div>
+        </div>
+        <div class="urun" id="ayvalik">
+            <div class="content">
+                <div class="name">AYVALIK TOSTU</div>
+                <div class="desc">Sosis, sucuk, salam, kaşar, rus salatası, ketçap.</div> 
+            </div>
+            <div class="price">32₺</div>
+        </div>
+        <div class="urun" id="klasik">
+            <div class="content">
+                <div class="name">KLASİK TOST</div>
+                <div class="desc">Kaşar, sucuk, salça, mozzarella.</div> 
+            </div>
+            <div class="price">27₺</div>
+        </div>
+        <div class="urun" id="kasarli">
+            <div class="content">
+                <div class="name">KAŞARLI TOST</div>
+                <div class="desc">Kaşar, mozzarella, salça.</div> 
+            </div>
+            <div class="price">25₺</div>
+        </div>
+        <div class="urun" id="domatesli">
+            <div class="content">
+                <div class="name">DOMATESLİ TOST</div>
+                <div class="desc">Domates, kaşar, mozzarella, domates kurusu.</div> 
+            </div>
+            <div class="price">25₺</div>
+        </div>
+        <div class="urun" id="sosisli">
+            <div class="content">
+                <div class="name">SOSİSLİ TOST</div>
+                <div class="desc">Sosis, mozzarella, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">27₺</div>
+        </div>
+        <div class="urun" id="citirTost">
+            <div class="content">
+                <div class="name">ÇITIR TOST</div>
+                <div class="desc">Tavuk nugget, mozzarella, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">29₺</div>
+        </div>
+        <div class="urun" id="cember">
+            <div class="content">
+                <div class="name">ÇEMBER TOST</div>
+                <div class="desc">Hamburger ekmeğine; Sosis, sucuk, salam, yumurta, kaşar, turşu, ketçap, mayonez.</div> 
+            </div>
+            <div class="price">32₺</div>
+        </div>
+        <div class="urun" id="kavurmali">
+            <div class="content">
+                <div class="name">KAVURMALI TOST</div>
+                <div class="desc">Kavurma, biber, mozzarella, kaşar, salça.</div> 
+            </div>
+            <div class="price">35₺</div>
+        </div>
+        <div class="urun" id="pastirmali">
+            <div class="content">
+                <div class="name">PASTIRMALI TOST</div>
+                <div class="desc">Pastırma, mozzarella, kaşar, salça.</div> 
+            </div>
+            <div class="price">35₺</div>
+        </div>
+        <div class="urun" id="special">
+            <div class="content">
+                <div class="name"><img src="images/logo.svg" class="logo gagaSpecial"></img> SPECIAL</div>
+                <div class="desc">3 dilim ekmeğe; Yumurta, sucuk, kavurma, biber, kaşar, mozzarella, salça, domates kurusu.</div> 
+            </div>
+            <div class="price">42₺</div>
+        </div>
+    </div>
+
+    <hr id="sandwich">
+    <div class="menu">
+        <h3>SANDVİÇLER</h3>
+        <div class="urun" id="akdeniz">
+            <div class="content">
+                <div class="name">AKDENİZ SANDVİÇ</div>
+                <div class="desc">Beyaz peynir, domates, salatalık, yeşillik.</div> 
+            </div>
+            <div class="price">27₺</div>
+        </div>
+        <div class="urun" id="hindifume">
+            <div class="content">
+                <div class="name">HİNDİ FÜME SANDVİÇ</div>
+                <div class="desc">Hindi füme, kaşar, domates, turşu, yeşillik.</div> 
+            </div>
+            <div class="price">27₺</div>
+        </div>
+        <div class="urun" id="hellimli">
+            <div class="content">
+                <div class="name">HELLİMLİ SANDVİÇ</div>
+                <div class="desc">Hellim, domates, yeşillik.</div> 
+            </div>
+            <div class="price">30₺</div>
+        </div>
+        <div class="urun" id="tuna">
+            <div class="content">
+                <div class="name">TON BALIKLI SANDVİÇ</div>
+                <div class="desc">Özel soslu ton balığı, yeşillik, mısır, turşu, domates.</div> 
+            </div>
+            <div class="price">30₺</div>
+        </div>
+        <div class="urun" id="salam">
+            <div class="content">
+                <div class="name">SALAMLI SANDVİÇ</div>
+                <div class="desc">Salam, kaşar, domates, turşu, yeşillik.</div> 
+            </div>
+            <div class="price">25₺</div>
+        </div>
+    </div>
+
+    <hr id="healthy"> <!-- TODO Hamdicandan mesaj bekle -->
+    <div class="menu">
+        <h3>SPORCU MENÜLER</h3>
+        <div class="urun" id="tavuklu">
+            <div class="content">
+                <div class="name">TAVUKLU MENÜ</div>
+                <div class="desc">200gr ızgara tavuk, pilav, salata.</div>
+                <div class="desc"><img src="images/icons/clock-solid.svg" class="logo" style="width: 16px"> Hazırlanma süresi 20-25 dakikadır.</div> 
+            </div>
+            <div class="price">30₺</div>
+        </div>
+        <div class="urun" id="tonlu">
+            <div class="content">
+                <div class="name">TON BALIKLI SALATA</div>
+                <div class="desc">Ton balığı, iceberg, akdeniz yeşillikleri, salatalık, siyah zeytin, turşu, kırmızı köz biber. Kroton ekmek ile birlikte.</div>
+            </div>
+            <div class="price">30₺</div>
+
+        </div>
+        <div class="urun" id="sezar">
+            <div class="content">
+                <div class="name">TAVUKLU SALATA</div>
+                <div class="desc">Izgara tavuk parçaları, iceberg, akdeniz yeşillikleri, tane mısır, parmesan peynir. Kroton ekmek ile birlikte.</div>
+                <div class="desc"><img src="images/icons/clock-solid.svg" class="logo" style="width: 16px"> Hazırlanma süresi 20-25 dakikadır.</div> 
+            </div>
+            <div class="price">30₺</div>
+        </div>
+    </div>
+
+    <hr id="appetizer">
+    <div class="menu">
+        <h3>APARATİFLER</h3>
+        <div class="urun" id="citirTabak">
+            <div class="content">
+                <div class="name">ÇITIR TABAK</div>
+                <div class="desc">3 adet soğan halkası, 3 adet sosis, 3 adet nugget ve patates kızartması.</div> 
+            </div>
+            <div class="price">27₺</div>
+        </div>
+        <div class="urun" id="patates">
+            <div class="content">
+                <div class="name">PATATES KIZARTMASI</div>
+            </div>
+            <div class="price">20₺</div>
+        </div>
+        <div class="urun" id="sosisliSand">
+            <div class="content">
+                <div class="name">SOSİSLİ SANDVİÇ</div>
+                <div class="desc">Sandviç ekmeği arasında; jülyen sosis, ketçap, mayonez, isteğe bağlı hardal.</div> 
+            </div>
+            <div class="price">15₺</div>
+        </div>
+
+        <div class="adet"><span class="underlined">4'lü</span><span class="underlined">8'li</span></div> 
+
+        <div class="urun">
+            <div class="content">
+                <div class="name">Nugget</div>
+                <div class="name">Soğan Halkası</div>
+                <div class="name">Sosis</div>
+            </div>
+            <div class="content">
+                <div class="price"><span class="dortlu">10₺</span>18₺</div>
+                <div class="price"><span class="dortlu">10₺</span>18₺</div>
+                <div class="price"><span class="dortlu">10₺</span>18₺</div>
+            </div>
+
+        </div> 
+    </div>
+
+    <hr id="hotdrinks">
+    <div class="menu">
+        <h3>SICAK İÇECEKLER</h3>
+        <div class="urun" id="americano">
+            <div class="content">
+                <div class="name">AMERICANO</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">15₺</div>
+        </div>
+        <div class="urun" id="damericano">
+            <div class="content">
+                <div class="name">DOUBLE AMERICANO</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">20₺</div>
+        </div>
+        <div class="urun" id="espresso">
+            <div class="content">
+                <div class="name">ESPRESSO</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">12₺</div>
+        </div>
+        <div class="urun" id="despresso">
+            <div class="content">
+                <div class="name">DOUBLE ESPRESSO</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">16₺</div>
+        </div>
+        <div class="urun" id="cappucchino">
+            <div class="content">
+                <div class="name">CAPPUCCINO</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">17₺</div>
+        </div>
+        <div class="urun" id="latte">
+            <div class="content">
+                <div class="name">LATTE</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">17₺</div>
+        </div>
+        <div class="urun" id="mocha">
+            <div class="content">
+                <div class="name">MOCHA</div>
+                <div class="desc">Sütlü veya beyaz çikolata seçenekleriyle.</div>
+            </div> 
+            <div class="price">20₺</div>
+        </div>
+        <div class="urun" id="macchiato">
+            <div class="content">
+                <div class="name">MACCHIATO</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">18₺</div>
+        </div>
+        <hr>
+        <div class="urun" id="tea">
+            <div class="content">
+                <div class="name">ÇAY</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">4₺</div>
+        </div>
+        <div class="urun" id="cupTea">
+            <div class="content">
+                <div class="name">FİNCAN ÇAY</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">7₺</div>
+        </div>
+        <div class="urun" id="oralet">
+            <div class="content">
+                <div class="name">ORALET</div>
+                <div class="desc">Portakal, kivi, kuşburnu, muz, mentol seçenekleriyle.</div>
+            </div> 
+            <div class="price">4₺</div>
+        </div>
+        <div class="urun" id="herbal">
+            <div class="content">
+                <div class="name">BİTKİ ÇAYLARI</div>
+                <div class="desc">Ihlamur, adaçayı, kış çayı, kekik, nane-limon, yeşil çay seçenekleriyle.</div>
+            </div> 
+            <div class="price">14₺</div>
+        </div>
+        <div class="urun" id="turkish">
+            <div class="content">
+                <div class="name">TÜRK KAHVESİ</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">10₺</div>
+        </div>
+        <div class="urun" id="notturkish">
+            <div class="content">
+                <div class="name">AROMALI TÜRK KAHVESİ</div>
+                <div class="desc">Dibek kahvesi, damla sakızlı türk kahvesi, menengeç kahvesi seçenekleriyle.</div>
+            </div> 
+            <div class="price">12₺</div>
+        </div>
+        <div class="urun" id="doubleTurkish">
+            <div class="content">
+                <div class="name">DOUBLE TÜRK KAHVESİ</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">15₺</div>
+        </div>
+        <div class="urun" id="filter">
+            <div class="content">
+                <div class="name">FİLTRE KAHVE</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">15₺</div>
+        </div>
+        <div class="urun" id="hotCoco">
+            <div class="content">
+                <div class="name">SICAK ÇİKOLATA</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">17₺</div>
+        </div>
+        <div class="urun" id="sahlep">
+            <div class="content">
+                <div class="name">SAHLEP</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">18₺</div>
+        </div>
+    </div>
+
+    <hr id="colddrinks">
+    <div class="menu">
+        <h3>SOĞUK İÇECEKLER</h3>
+        <div class="urun" id="siseler">
+            <div class="content">
+                <div class="name">ŞİŞE/KUTU İÇECEKLER</div>
+                <div class="desc">Coca-Cola, Sprite, Fanta, Ice-Tea, Meyve Suyu</div>
+            </div> 
+            <div class="price">10₺</div>
+        </div>
+        <div class="urun" id="soda">
+            <div class="content">
+                <div class="name">SADE SODA</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">6₺</div>
+        </div>
+        <div class="urun" id="meyveli">
+            <div class="content">
+                <div class="name">MEYVELİ SODA</div>
+                <div class="desc">Limon, elma, ananas, kivi, çilek, seçenekleriyle.</div>
+            </div> 
+            <div class="price">8₺</div>
+        </div>
+        <div class="urun" id="ayran">
+            <div class="content">
+                <div class="name">AYRAN</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">6₺</div>
+        </div>
+        <div class="urun" id="limonata">
+            <div class="content">
+                <div class="name">LİMONATA</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">10₺</div>
+        </div>
+        <div class="urun" id="water">
+            <div class="content">
+                <div class="name">SU</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">3₺</div>
+        </div>
+        <div class="urun overline" id="orangeJuice">
+            <div class="content">
+                <div class="name">PORTAKAL SUYU</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">15₺</div>
+        </div>
+        <div class="urun" id="churchill">
+            <div class="content">
+                <div class="name">CHURCHILL</div>
+                <div class="desc">Sade soda, limon, tuz.</div>
+            </div> 
+            <div class="price">10₺</div>
+        </div>
+        <hr>
+        <div class="urun" id="iceAmericano">
+            <div class="content">
+                <div class="name">ICE AMERICANO</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">17₺</div>
+        </div>
+        <div class="urun" id="iceLatte">
+            <div class="content">
+                <div class="name">ICE LATTE</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">19₺</div>
+        </div>
+        <div class="urun" id="iceMocha">
+            <div class="content">
+                <div class="name">ICE MOCHA</div>
+                <div class="desc">Sütlü veya beyaz çikolata seçenekleriyle.</div>
+            </div> 
+            <div class="price">20₺</div>
+        </div>
+        <hr>
+        <div class="urun overline" id="frappe">
+            <div class="content">
+                <div class="name">FRAPPE</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">20₺</div>
+        </div>
+        <div class="urun overline" id="frozen">
+            <div class="content">
+                <div class="name">FROZEN</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">20₺</div>
+        </div>
+        <div class="urun overline" id="milkshake">
+            <div class="content">
+                <div class="name">MILKSHAKE</div>
+                <div class="desc"></div>
+            </div> 
+            <div class="price">20₺</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
