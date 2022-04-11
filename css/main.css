@@ -22,14 +22,18 @@
 @-o-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
+    
 }
-  
 @-ms-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
 }
 .overline{
-    text-decoration:line-through 3px;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 3px;
+}
+.inlineLine{
+    display: inline;
 }
 body{
     background: #363537;
