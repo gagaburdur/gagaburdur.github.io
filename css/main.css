@@ -36,7 +36,8 @@
     display: inline;
 }
 body{
-    background: #363537;
+    background: repeat url(../images/test.png),
+                                    #363537;
     color: #F0F7EE;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
