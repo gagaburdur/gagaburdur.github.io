@@ -59,6 +59,7 @@ body{
     position: absolute;
     bottom: 10vh;
     right: 15vw;
+    max-height: 15vh;
 }
 a{
     color: inherit;
