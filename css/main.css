@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-*{
+*, *::after, *::before {
     box-sizing: border-box;
     scroll-behavior: smooth;
     max-width: 1200px;
@@ -30,8 +30,8 @@
     100% {opacity:1;}
 }
 .overline{
-    text-decoration-line: line-through;
-    text-decoration-thickness: 3px;
+    text-decoration-line: line-through !important;
+    text-decoration-thickness: 3px !important;
 }
 .inlineLine{
     display: inline;
