@@ -1,0 +1,44 @@
+.Hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 10%;
+    .Logo{
+        filter: invert(95%) sepia(7%) saturate(222%) hue-rotate(63deg) brightness(104%) contrast(94%);
+        width: 70vw;
+        height: auto;
+    }
+    h2{
+        font-weight: 900;
+        font-size: 17vw;
+        margin: 0 -10px 0 0;
+        letter-spacing: 10px;
+    }
+    a{
+        h3{
+            font-weight: 500;
+            margin: 0;
+            font-size: 8vw;
+        }
+    }
+    .Swipe{
+        p{
+            margin: 0;
+            font-family: "parisienne", sans-serif;
+            position: absolute;
+            bottom: 8vh;
+            right: 5vw;
+            font-size: 6vw;
+            font-weight: 300;
+        }
+        .Arrow{
+            position: absolute;
+            bottom: 16vh;
+            right: 10vw;
+            max-height: 12vh;
+            width: auto;
+        }
+    }
+}

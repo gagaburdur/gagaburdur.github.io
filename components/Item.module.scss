@@ -1,0 +1,25 @@
+.Item {
+	display: flex;
+	text-align: left;
+	justify-content: space-between;
+	margin: 15px;
+	.Info {
+		h3 {
+			margin: 0;
+			font-size: 24px;
+			font-weight: 700;
+		}
+		p {
+			margin: 0;
+			font-size: 16px;
+			font-weight: 300;
+		}
+	}
+	.Price {
+		p {
+            margin: 0;
+			font-size: 24px;
+			font-weight: 700;
+		}
+	}
+}
