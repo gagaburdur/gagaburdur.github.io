@@ -8,6 +8,7 @@ const Category = (props) => {
         <div className={classes.Category}>
             <h2>{props.name}</h2>
             {props.items.map((item) => {
+                if (item.disabled === true) return null;
                 return <Item name={item.name} price={item.price} key={item.id} desc={item.desc}/>
             })}
         </div>
