@@ -1,0 +1,16 @@
+[
+    {
+        "id": "sicakicecekler",
+        "name": "Sıcak İçecekler",
+        "items": [
+
+        ]
+    },
+    {
+        "id": "sogukicecekler",
+        "name": "Soğuk İçecekler",
+        "items": [
+
+        ]
+    }
+]

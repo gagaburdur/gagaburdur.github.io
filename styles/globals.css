@@ -20,7 +20,7 @@ a {
 }
 
 body {
-	background: repeat url(../public/all.png), #363537;
+	background: repeat url(/all.png), #363537;
 	background-position: center, center;
 	color: #f0f7ee;
 	text-align: center;
