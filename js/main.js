@@ -1,5 +1,3 @@
-jQuery("a.gallery").colorbox();
-
 mybutton = document.getElementById("goTop");
 window.onscroll = () => {
   scrollFunction();
