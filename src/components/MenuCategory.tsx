@@ -14,7 +14,7 @@ const MenuCategory = (props: MenuCategoryProps) => {
       {props.category.icon && (
         <DecorativeIcon
           name={props.category.icon}
-          className="w-28 h-28 mx-auto inline-block"
+          className="w-28 h-28 block mx-auto fill-[#575756] mb-8"
         />
       )}
       <h2 className="text-2xl font-extrabold mb-4 tracking-[2px]">{props.category.category}</h2>
