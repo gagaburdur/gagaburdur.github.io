@@ -46,3 +46,106 @@ html, body {
   background-repeat: repeat;
   background-position: center;
 }
+
+@media print {
+  @page {
+    size: A3 landscape;
+    margin: 8mm;
+  }
+
+  html, body {
+    background: white !important;
+    font-size: 8px;
+    line-height: 1.3;
+  }
+
+  /* Main container: disable flex, enable columns */
+  #root > div {
+    display: block !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    columns: 4;
+    column-gap: 16px;
+  }
+
+  /* GAGA title spans all columns */
+  #root > div > h1 {
+    column-span: all;
+    font-size: 14px;
+    margin: 0 0 4px 0;
+  }
+
+  /* MenuCategory wrapper */
+  #root > div > div {
+    display: block !important;
+    break-inside: avoid-column;
+    margin: 0 0 12px 0 !important;
+  }
+
+  /* Hide decorative icons */
+  #root svg[class*="w-28"] {
+    display: none !important;
+  }
+
+  /* Category title */
+  #root h2 {
+    font-size: 10px;
+    margin-bottom: 2px;
+    padding-bottom: 1px;
+    border-bottom: 0.5px solid #575756;
+  }
+
+  /* Items grid → block */
+  #root .grid.grid-cols-1 {
+    display: block !important;
+  }
+
+  /* Each menu item */
+  #root .grid.grid-cols-1 > div {
+    margin-bottom: 2px;
+  }
+
+  /* Item name */
+  #root h3 {
+    font-size: 8px;
+    line-height: 1.2;
+  }
+
+  /* Item description */
+  #root p.text-sm {
+    font-size: 7px;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  /* Item price */
+  #root p.text-base {
+    font-size: 7px;
+    margin: 0;
+  }
+
+  /* Hide allergen icons in items */
+  #root .flex.gap-2 {
+    display: none !important;
+  }
+
+  /* Extras section */
+  #root .border-t {
+    margin-top: 2px;
+    padding-top: 1px;
+    border-width: 0.5px;
+  }
+
+  #root .grid.grid-cols-2 {
+    display: grid !important;
+    gap: 0 8px;
+    font-size: 6px;
+  }
+
+  /* Hide allergen legend and footer */
+  #root footer,
+  #root > div > div.print\:hidden {
+    display: none !important;
+  }
+}
