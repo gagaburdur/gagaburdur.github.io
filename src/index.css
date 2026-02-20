@@ -19,3 +19,7 @@
 @theme {
   --font-sans: "Montserrat", sans-serif;
 }
+
+html, body {
+  background-color: #fffdf1;
+}
