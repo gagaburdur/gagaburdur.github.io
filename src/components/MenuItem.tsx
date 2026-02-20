@@ -53,7 +53,7 @@ const AllergenRenderer = (props: { allergens: Allergens }) => {
         const icon = allergenIcons[allergen];
         if (!icon) return null;
         return (
-          <img key={allergen} src={icon} alt={allergen} className="w-5 h-5" />
+          <img key={allergen} src={icon} alt={allergen} className="w-5 h-5 fill-[#575756]" />
         );
       })}
     </div>
