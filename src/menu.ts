@@ -27,6 +27,8 @@ export interface Extra {
 
 export interface MenuCategory {
   category: string;
+  disabled?: boolean;
+  icon?: string;
   items: MenuItem[];
   extras?: Extra[];
 }
@@ -57,58 +59,86 @@ export const menu: MenuCategory[] = [
     items: [
       {
         name: "Hamburger",
-        description: "Burger Sos, Marul, Alman Turşusu, Soğan Turşusu, Domates, Köfte, Patates Kızartması, Dip Sos",
+        description:
+          "Burger Sos, Marul, Alman Turşusu, Soğan Turşusu, Domates, Köfte, Patates Kızartması, Dip Sos",
         price: 340,
-        allergens: a({ gluten: true, susam: true, yumurta: true, hardal: true }),
+        allergens: a({
+          gluten: true,
+          susam: true,
+          yumurta: true,
+          hardal: true,
+        }),
       },
       {
         name: "Cheeseburger",
-        description: "Karamelize Soğan, Turşu, Köfte, Cheddar, Burger Sos, Patates Kızartması, Dip Sos",
+        description:
+          "Karamelize Soğan, Turşu, Köfte, Cheddar, Burger Sos, Patates Kızartması, Dip Sos",
         price: 360,
-        allergens: a({ gluten: true, susam: true, yumurta: true, hardal: true, sut: true, soya: true }),
+        allergens: a({
+          gluten: true,
+          susam: true,
+          yumurta: true,
+          hardal: true,
+          sut: true,
+          soya: true,
+        }),
       },
       {
         name: "New Mexico Burger",
-        description: "Acı Sos (Köz Kapyalı), Jalepeno Reliş, Domates, Köfte, Acı Mayonez, Patates Kızartması, Dip Sos",
+        description:
+          "Acı Sos (Köz Kapyalı), Jalepeno Reliş, Domates, Köfte, Acı Mayonez, Patates Kızartması, Dip Sos",
         price: 370,
         allergens: a({ gluten: true, susam: true, yumurta: true }),
       },
       {
         name: "Fantazi Burger",
-        description: "Uzun Pişmiş Dana Eti, Köfte, Peynir Sos, Roka, Patates Kızartması, Dip Sos",
+        description:
+          "Uzun Pişmiş Dana Eti, Köfte, Peynir Sos, Roka, Patates Kızartması, Dip Sos",
         price: 400,
         allergens: a({ gluten: true, susam: true, yumurta: true, sut: true }),
       },
     ],
     extras: [
       { name: "Ekstra Köfte", price: 150 },
+      { name: "Pastırma", price: 40 },
+      { name: "Mantar", price: 30 },
+      { name: "Ananas", price: 30 },
+      { name: "Yumurta", price: 30 },
+      { name: "Cheddar", price: 20 },
     ],
   },
   {
     category: "TAVUK BURGERLER",
     items: [
       {
-        name: "Cheese Chicken",
-        description: "Karamelize Soğan, Turşu, Kızarmış Tavuk, Cheddar, Burger Sos, Patates Kızartması, Dip Sos",
+        name: "Crispy Chicken",
+        description:
+          "Karamelize Soğan, Turşu, Kızarmış Tavuk, Cheddar, Burger Sos, Patates Kızartması, Dip Sos",
         price: 290,
         allergens: a({ gluten: true, susam: true, yumurta: true, sut: true }),
       },
       {
         name: "New Mexico Chicken",
-        description: "Acı Sos (Köz Kapya Olabilir), Jalepeno Reliş, Kızarmış Tavuk, Acı Mayonez, Coleslaw, Patates Kızartması, Dip Sos",
+        description:
+          "Acı Sos (Köz Kapya), Jalepeno Reliş, Kızarmış Tavuk, Acı Mayonez, Coleslaw, Patates Kızartması, Dip Sos",
         price: 290,
         allergens: a({ gluten: true, susam: true, yumurta: true }),
       },
       {
-        name: "Chicken",
-        description: "Burger Sos, Marul, Turşu, Domates, Tavuk Fileto, Patates Kızartması, Dip Sos",
+        name: "Cheese Chicken",
+        description:
+          "Burger Sos, Marul, Turşu, Domates, Tavuk Fileto, Cheddar Peyniri, Patates Kızartması, Dip Sos",
         price: 260,
-        allergens: a({ gluten: true, susam: true, yumurta: true }),
+        allergens: a({ gluten: true, susam: true, yumurta: true, sut: true }),
       },
     ],
     extras: [
-      { name: "Ekstra Tavuk", price: 100 },
+      { name: "Pastırma", price: 40 },
+      { name: "Mantar", price: 30 },
+      { name: "Ananas", price: 30 },
+      { name: "Cheddar", price: 20 },
     ],
+    icon: "burger"
   },
   {
     category: "SANDVİÇ",
@@ -123,9 +153,22 @@ export const menu: MenuCategory[] = [
         name: "Pesto Tavuk Sandviç",
         description: "Pesto Sos, Mozarella, Roka, Tavuk Fileto, Kuru Domates",
         price: 260,
-        allergens: a({ gluten: true, susam: true, yumurta: true, kuruyemis: true, yerfistigi: true }),
+        allergens: a({
+          gluten: true,
+          susam: true,
+          yumurta: true,
+          kuruyemis: true,
+          yerfistigi: true,
+        }),
       },
+      {
+        name: "Hindi Füme Sandviç",
+        description: "Hindi Füme, Kaşar, Domates, Turşu, Roka, Mayonez",
+        price: 210,
+        allergens: a({ gluten: true, susam: true, yumurta: true }),
+      }
     ],
+    icon: "bread"
   },
   {
     category: "SALATA",
@@ -144,11 +187,13 @@ export const menu: MenuCategory[] = [
       },
       {
         name: "Pancar Salata",
-        description: "Fırınlanmış Pancar, Portokal, Mevsim Yeşilliği, Karamelize Ceviz, Tahin Portakal Vinegret",
+        description:
+          "Fırınlanmış Pancar, Portakal, Mevsim Yeşilliği, Karamelize Ceviz, Tahin Portakal Vinegret",
         price: 270,
         allergens: a({ yemis: true, susam: true }),
       },
     ],
+    icon: "leaf"
   },
   {
     category: "MAKARNA",
@@ -161,60 +206,70 @@ export const menu: MenuCategory[] = [
       },
       {
         name: "Penne Alfredo",
-        description: "Mantar (Kestane ve İstiridye), Mor Soğan, Peynir, Tavuk, Krema",
+        description:
+          "Mantar (Kestane ve İstiridye), Mor Soğan, Peynir, Tavuk, Krema",
         price: 300,
         allergens: a({ gluten: true, sut: true }),
       },
       {
         name: "Penne Napoliten",
-        description: "Napoliten Sos, Tulum Peyniri, Kaşar Peyniri, Çeri Domates",
+        description:
+          "Napoliten Sos, Tulum Peyniri, Kaşar Peyniri, Çeri Domates",
         price: 270,
         allergens: a({ gluten: true, sut: true }),
       },
       {
         name: "Penne Arabiatta",
-        description: "Arabiatta Sos, Dilim Zeytin, Jalapeno Turşusu, Çeri Domates, Kaşar Peyniri",
+        description:
+          "Arabiatta Sos, Dilim Zeytin, Jalapeno Turşusu, Çeri Domates, Kaşar Peyniri",
         price: 270,
         allergens: a({ gluten: true, sut: true }),
       },
     ],
+    icon: "pan"
   },
   {
     category: "TACO",
     items: [
       {
         name: "Carne Asada",
-        description: "Uzun Pişmiş Dana Eti, Peynir Sos, Guacamole, Acı Mayonez, Soğan Turşusu, Meksika Biberi, Yanında Limon",
+        description:
+          "Uzun Pişmiş Dana Eti, Peynir Sos, Guacamole, Acı Mayonez, Soğan Turşusu, Meksika Biberi, Yanında Limon",
         price: 360,
         allergens: a({ gluten: true, sut: true, yumurta: true }),
       },
       {
         name: "Karides Taco",
-        description: "Tempura Karides, Sriracha Mayonez, Guacamole, Soğan Turşusu, Meksika Biberi, Yanında Limon",
+        description:
+          "Tempura Karides, Sriracha Mayonez, Guacamole, Soğan Turşusu, Meksika Biberi, Yanında Limon",
         price: 300,
         allergens: a({ kabuklu: true, yumurta: true, gluten: true }),
       },
       {
         name: "Tavuk Taco",
-        description: "Izgara Tavuk, Köz Biber Sos, Guacamole, Jalepeno Reliş, Köz Mısır, Soğan Turşusu, Meksika Biberi",
+        description:
+          "Izgara Tavuk, Köz Biber Sos, Guacamole, Jalepeno Reliş, Köz Mısır, Soğan Turşusu, Meksika Biberi",
         price: 300,
         allergens: a({ gluten: true }),
       },
     ],
+    icon: "mustache"
   },
   {
     category: "ANA YEMEK",
     items: [
       {
         name: "Supreme Tavuk",
-        description: "Fırında Tavuk, Supreme Sos, Garniş Sebze",
+        description: "Fırında Tavuk, Supreme Sos, Fırınlanmış Sebzeler",
         price: 450,
         allergens: a({ sut: true }),
       },
     ],
+    icon: "knife"
   },
   {
     category: "TATLILAR",
+    disabled: true,
     items: [
       {
         name: "Churros",
@@ -229,23 +284,27 @@ export const menu: MenuCategory[] = [
         allergens: a({ gluten: true, sut: true }),
       },
     ],
+    icon: "cream"
   },
   {
     category: "TOSTLAR",
     items: [
       {
         name: "Peynir Seven Tost",
-        description: "Cheddar, Ezine, Kaşar Peyniri, Kızarmış Kabak, Domates Kurusu, Patates Kızartması, Dip Sos",
+        description:
+          "Cheddar, Ezine, Kaşar Peyniri, Kızarmış Kabak, Domates Kurusu, Patates Kızartması, Dip Sos",
         price: 350,
         allergens: a({ gluten: true, sut: true }),
       },
       {
         name: "Kavurmalı Tost",
-        description: "Kavurma, Biber, Salça, Kaşar, Patates Kızartması, Dip Sos",
+        description:
+          "Kavurma, Biber, Salça, Kaşar, Patates Kızartması, Dip Sos",
         price: 250,
         allergens: a({ gluten: true, sut: true }),
       },
     ],
+    icon: "bread"
   },
   {
     category: "SUSHI",
@@ -264,7 +323,8 @@ export const menu: MenuCategory[] = [
       },
       {
         name: "Spicy Maguro Roll",
-        description: "Pirinç, Nori, Salatalık, Avokado, Krem Peynir, Ton Balığı ve Acı Sos",
+        description:
+          "Pirinç, Nori, Salatalık, Avokado, Krem Peynir, Ton Balığı ve Acı Sos",
         price: 330,
         allergens: a({ balik: true, sut: true }),
       },
@@ -276,7 +336,8 @@ export const menu: MenuCategory[] = [
       },
       {
         name: "Hosomaki Roll",
-        description: "Pirinç, Nori. Yengeç Surimi, Somon, Havuç, Avokado Dolgularından Birini İçerir",
+        description:
+          "Pirinç, Nori. Yengeç Surimi, Somon, Havuç, Avokado Dolgularından Birini İçerir",
         price: 280,
         allergens: a({ balik: true, kabuklu: true }),
       },
@@ -300,7 +361,8 @@ export const menu: MenuCategory[] = [
       },
       {
         name: "Philadelphia Roll",
-        description: "Somon, Salatalık, Krem Peynir, Susam, Pirinç, Nori, Avokado",
+        description:
+          "Somon, Salatalık, Krem Peynir, Susam, Pirinç, Nori, Avokado",
         price: 330,
         allergens: a({ balik: true, sut: true, susam: true }),
       },
@@ -311,6 +373,7 @@ export const menu: MenuCategory[] = [
         allergens: noAllergens,
       },
     ],
+    icon: "seaweed"
   },
   {
     category: "SICAK İÇECEKLER",
@@ -377,7 +440,8 @@ export const menu: MenuCategory[] = [
       },
       {
         name: "Oralet",
-        description: "Portakal, Kivi, Kuşburnu, Karadut, Muz, Elma, Çilek, Mentol",
+        description:
+          "Portakal, Kivi, Kuşburnu, Karadut, Muz, Elma, Çilek, Mentol",
         price: 35,
         allergens: noAllergens,
       },
@@ -395,7 +459,8 @@ export const menu: MenuCategory[] = [
       },
       {
         name: "Aromalı Türk Kahvesi",
-        description: "Dibek Kahvesi, Damla Sakızlı Türk Kahvesi, Menengiç Kahvesi",
+        description:
+          "Dibek Kahvesi, Damla Sakızlı Türk Kahvesi, Menengiç Kahvesi",
         price: 70,
         allergens: noAllergens,
       },
@@ -418,6 +483,7 @@ export const menu: MenuCategory[] = [
         allergens: a({ sut: true }),
       },
     ],
+    icon: "cup"
   },
   {
     category: "SOĞUK İÇECEKLER",
@@ -442,7 +508,8 @@ export const menu: MenuCategory[] = [
       },
       {
         name: "Meyveli Soda",
-        description: "Limon, Elma, Ananas, Kivi, Çilek ve Karpuz-Çilek Seçenekleriyle",
+        description:
+          "Limon, Elma, Ananas, Kivi, Çilek ve Karpuz-Çilek Seçenekleriyle",
         price: 50,
         allergens: noAllergens,
       },
@@ -478,13 +545,15 @@ export const menu: MenuCategory[] = [
       },
       {
         name: "Iced Caffe Mocha",
-        description: "Sütlü Çikolata veya Beyaz Çikolata, Double Shot Espresso İçerir",
+        description:
+          "Sütlü Çikolata veya Beyaz Çikolata, Double Shot Espresso İçerir",
         price: 160,
         allergens: a({ sut: true }),
       },
       {
         name: "Frappe",
-        description: "Granül Kahve, Buz, Süt ve Süt Köpüğü, İsteğe Göre Karamel ya da Vanilya Şurubu",
+        description:
+          "Granül Kahve, Buz, Süt ve Süt Köpüğü, İsteğe Göre Karamel ya da Vanilya Şurubu",
         price: 140,
         allergens: a({ sut: true }),
       },
@@ -501,5 +570,6 @@ export const menu: MenuCategory[] = [
         allergens: a({ sut: true }),
       },
     ],
+    icon: "cocktail"
   },
 ];

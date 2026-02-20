@@ -18,11 +18,11 @@ const allergenLegend = [
 function App() {
   return (
     <div className="min-h-screen flex flex-col items-start justify-start text-[#575756] py-12 px-4 max-w-2xl mx-auto">
-      <h1 className="text-4xl font-black tracking-widest mt-4 mb-8">GAGA</h1>
+      <h1 className="text-4xl font-black tracking-[4px] mt-4 mb-8">GAGA</h1>
       {menu.map((category) => {
         return <MenuCategory key={category.category} category={category} />
       })}
-      <div className="w-full mt-12 pt-8 border-t border-[#575756]/20">
+      <div className="w-full pt-8 border-t border-[#575756]/20">
         <h2 className="text-lg font-bold tracking-wider mb-4">ALERJENLER</h2>
         <div className="grid grid-cols-2 gap-3">
           {allergenLegend.map(({ key, label }) => (

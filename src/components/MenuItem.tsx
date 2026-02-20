@@ -9,14 +9,14 @@ const MenuItem = (props: MenuItemProps) => {
   return (
     <div className="">
       <div className="flex justify-between items-center">
-        <h3 className="font-bold text-lg">{props.item.name}</h3>
+        <h3 className="font-bold text-lg tracking-wide uppercase">{props.item.name}</h3>
         {props.item.allergens && (
           <AllergenRenderer allergens={props.item.allergens} />
         )}
       </div>
 
-      <p className="text-sm mt-1">{props.item.description}</p>
-      <p className="text-base font-bold mt-2">{props.item.price} TL</p>
+      <p className="text-sm">{props.item.description}</p>
+      <p className="text-base font-bold mt-1">{props.item.price} TL</p>
     </div>
   );
 };
