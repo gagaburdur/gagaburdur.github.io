@@ -13,6 +13,19 @@ const MenuCategory = (props: MenuCategoryProps) => {
           <MenuItem key={item.name} item={item} />
         ))}
       </div>
+      {props.category.extras && props.category.extras.length > 0 && (
+        <div className="mt-4 pt-4 border-t border-[#575756]/10">
+          <h3 className="text-sm font-bold tracking-wider mb-2">EKSTRALAR</h3>
+          <div className="grid grid-cols-2 gap-x-6 gap-y-1">
+            {props.category.extras.map((extra) => (
+              <div key={extra.name} className="flex justify-between items-center text-sm">
+                <span>{extra.name}</span>
+                <span className="font-bold">+{extra.price} TL</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
