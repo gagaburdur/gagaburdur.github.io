@@ -29,7 +29,7 @@ const MenuCategory = (props: MenuCategoryProps) => {
             {props.category.extras.map((extra) => (
               <div key={extra.name} className="flex justify-between items-center text-sm">
                 <span>{extra.name}</span>
-                <span className="font-bold">+{extra.price} TL</span>
+                <span>+{extra.price}</span>
               </div>
             ))}
           </div>

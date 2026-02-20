@@ -1,6 +1,7 @@
 import MenuCategory from "./components/MenuCategory";
 import AllergenIcon from "./components/AllergenIcon";
 import { menu } from "./menu"
+import DecorativeIcon from "./components/DecorativeIcon";
 
 const allergenLegend = [
   { key: "gluten", label: "Gluten" },
@@ -22,7 +23,7 @@ function App() {
       {menu.map((category) => {
         return <MenuCategory key={category.category} category={category} />
       })}
-      <div className="w-full pt-8 border-t border-[#575756]/20">
+      <div className="w-full py-8 border-t border-[#575756]/20">
         <h2 className="text-lg font-bold tracking-wider mb-4">ALERJENLER</h2>
         <div className="grid grid-cols-2 gap-3">
           {allergenLegend.map(({ key, label }) => (
@@ -32,6 +33,11 @@ function App() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="flex flex-col items-center justify-center w-full pt-8 border-t border-[#575756]/20">
+        <p className="text-sm text-center">Menünün Sonuna Ulaştınız</p>
+        <DecorativeIcon name="dino" className="w-28 h-28 block mx-auto fill-[#575756] my-8" />
+        <p className="text-sm">Developed by <a href="https://berkbulgan.com" target="_blank" className="underline" rel="noopener noreferrer">Berk Bulgan</a></p>
       </div>
     </div>
   );

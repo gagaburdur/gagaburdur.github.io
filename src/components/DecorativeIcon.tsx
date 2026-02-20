@@ -5,13 +5,16 @@ import Burger from "../assets/burger.svg?react";
 import Cocktail from "../assets/cocktail.svg?react";
 import Cream from "../assets/cream.svg?react";
 import Cup from "../assets/cup.svg?react";
+import Dino from "../assets/dino.svg?react";
 import Fries from "../assets/fries.svg?react";
 import Knife from "../assets/knife.svg?react";
 import Leaf from "../assets/leaf.svg?react";
+import Loaf from "../assets/loaf.svg?react";
 import Meat from "../assets/meat.svg?react";
 import Mustache from "../assets/mustache.svg?react";
 import Pan from "../assets/pan.svg?react";
 import Seaweed from "../assets/seaweed.svg?react";
+
 
 
 type IconComponent = FunctionComponent<
@@ -31,6 +34,8 @@ const iconMap: Record<string, IconComponent> = {
   seaweed: Seaweed,
   cup: Cup,
   cocktail: Cocktail,
+  loaf: Loaf,
+  dino: Dino,
 };
 
 interface DecorativeIconProps extends SVGProps<SVGSVGElement> {

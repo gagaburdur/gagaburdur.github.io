@@ -6,6 +6,9 @@ interface MenuItemProps {
 }
 
 const MenuItem = (props: MenuItemProps) => {
+  if (props.item.disabled) {
+    return null;
+  }
   return (
     <div className="">
       <div className="flex justify-between items-center">
@@ -16,7 +19,7 @@ const MenuItem = (props: MenuItemProps) => {
       </div>
 
       <p className="text-sm">{props.item.description}</p>
-      <p className="text-base font-bold mt-1">{props.item.price} TL</p>
+      <p className="text-base font-bold mt-1">{props.item.price}</p>
     </div>
   );
 };
