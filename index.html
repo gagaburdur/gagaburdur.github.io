@@ -2,12 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" href="/favicon-light.ico" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="/favicon-dark.ico" media="(prefers-color-scheme: dark)" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vite-react-temp</title>
+    <title>GAGA</title>
   </head>
-  <body>
-    <div id="root"></div>
+  <body style="background-color:#fffdf1;margin:0">
+    <div id="root">
+      <div style="display:flex;align-items:center;justify-content:center;height:100vh">
+        <svg width="40" height="40" viewBox="0 0 40 40" style="animation:spin .8s linear infinite">
+          <circle cx="20" cy="20" r="16" fill="none" stroke="#575756" stroke-width="3" stroke-dasharray="80" stroke-dashoffset="20" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
