@@ -46,3 +46,59 @@ html, body {
   background-repeat: repeat;
   background-position: center;
 }
+
+@media print {
+  @page {
+    margin: 10mm;
+  }
+
+  html, body {
+    background: white !important;
+    background-image: none !important;
+  }
+
+  /* Main container: remove max-width, padding; enable columns */
+  .print-menu {
+    display: block;
+    max-width: none;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    column-width: 80mm;
+    column-gap: 8mm;
+    column-fill: auto;
+  }
+
+  /* Keep each menu item together, but let categories flow freely */
+  .print-item {
+    break-inside: avoid;
+  }
+
+  /* Keep category header with the first item */
+  .print-menu h2 {
+    break-after: avoid;
+  }
+
+  /* Compact typography */
+  .print-menu h1 { font-size: 16pt; margin-bottom: 4mm; }
+  .print-menu h2 { font-size: 11pt; margin-bottom: 2mm; }
+  .print-menu h3 { font-size: 9pt; }
+  .print-menu p { font-size: 8pt; }
+
+  /* Reduce spacing */
+  .print-category { margin-top: 3mm; margin-bottom: 3mm; }
+  .print-item { margin-bottom: 1.5mm; }
+
+  /* Extras: match print font size, compact divider */
+  .print-extras-wrap {
+    margin-top: 1mm;
+    padding-top: 1mm;
+  }
+  .print-extras-wrap span {
+    font-size: 8pt;
+  }
+  .print-extras {
+    gap: 0;
+    column-gap: 4mm;
+  }
+}

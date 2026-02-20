@@ -10,16 +10,18 @@ const MenuItem = (props: MenuItemProps) => {
     return null;
   }
   return (
-    <div className="">
+    <div className="print-item">
       <div className="flex justify-between items-center">
         <h3 className="font-bold text-lg tracking-wide uppercase">{props.item.name}</h3>
         {props.item.allergens && (
-          <AllergenRenderer allergens={props.item.allergens} />
+          <div className="print:hidden">
+            <AllergenRenderer allergens={props.item.allergens} />
+          </div>
         )}
       </div>
 
-      <p className="text-sm">{props.item.description}</p>
-      <p className="text-base font-bold mt-1">{props.item.price}</p>
+      {props.item.description && <p className="text-sm">{props.item.description}</p>}
+      <p className="text-base font-bold mt-1 print:mt-0">{props.item.price}</p>
     </div>
   );
 };
