@@ -17,7 +17,7 @@ export function slugify(text: string): string {
 }
 
 /** Smooth scrolls to an element by ID using requestAnimationFrame. */
-export function smoothScrollTo(elementId: string, duration = 600, offset = -40): void {
+export function smoothScrollTo(elementId: string, duration = 600, offset = -80): void {
   const element = document.getElementById(elementId);
   if (!element) return;
 
