@@ -270,7 +270,6 @@ export const menu: MenuCategory[] = [
   },
   {
     category: "TATLILAR",
-    disabled: true,
     items: [
       {
         name: "CHURROS",
