@@ -25,7 +25,7 @@ function App() {
       })}
       <div className="w-full py-8 border-t border-[#575756]/20 print:hidden">
         <h2 className="text-lg font-bold tracking-wider mb-4">ALERJENLER</h2>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-3" id="allergens">
           {allergenLegend.map(({ key, label }) => (
             <div key={key} className="flex items-center gap-2">
               <AllergenIcon name={key} className="w-5 h-5 text-[#575756] shrink-0" />

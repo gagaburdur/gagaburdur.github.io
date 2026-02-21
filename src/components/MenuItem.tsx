@@ -14,9 +14,9 @@ const MenuItem = (props: MenuItemProps) => {
       <div className="flex justify-between items-center">
         <h3 className="font-bold text-lg tracking-wide uppercase">{props.item.name}</h3>
         {props.item.allergens && (
-          <div className="print:hidden">
+          <a className="print:hidden" href="#allergens" title="Allergens">
             <AllergenRenderer allergens={props.item.allergens} />
-          </div>
+          </a>
         )}
       </div>
 
