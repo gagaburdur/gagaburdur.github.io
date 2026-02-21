@@ -45,6 +45,7 @@ html, body {
   background-image: url("/pattern.webp");
   background-repeat: repeat;
   background-position: center;
+  scroll-behavior: smooth;
 }
 
 @media print {
