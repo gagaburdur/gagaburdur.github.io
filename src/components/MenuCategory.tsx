@@ -4,29 +4,30 @@ import MenuItem from "./MenuItem";
 
 interface MenuCategoryProps {
   category: MenuCategoryType;
+  onAllergenClick?: (itemId: string) => void;
 }
-const MenuCategory = (props: MenuCategoryProps) => {
-  if (props.category.disabled) {
+const MenuCategory = ({ category, onAllergenClick }: MenuCategoryProps) => {
+  if (category.disabled) {
     return null;
   }
   return (
     <div className="print-category my-8 w-full">
-      {props.category.icon && (
+      {category.icon && (
         <DecorativeIcon
-          name={props.category.icon}
+          name={category.icon}
           className="w-28 h-28 block mx-auto fill-[#575756] mb-8 print:hidden"
         />
       )}
-      <h2 className="text-2xl font-extrabold mb-4 tracking-[2px]">{props.category.category}</h2>
+      <h2 className="text-2xl font-extrabold mb-4 tracking-[2px]">{category.category}</h2>
       <div className="grid grid-cols-1 w-full gap-6 print:gap-1">
-        {props.category.items.map((item) => (
-          <MenuItem key={item.name} item={item} />
+        {category.items.map((item) => (
+          <MenuItem key={item.name} item={item} onAllergenClick={onAllergenClick} />
         ))}
       </div>
-      {props.category.extras && props.category.extras.length > 0 && (
+      {category.extras && category.extras.length > 0 && (
         <div className="print-extras-wrap mt-4 pt-4 border-t border-[#575756]/10">
           <div className="print-extras grid grid-cols-2 gap-x-6 gap-y-1">
-            {props.category.extras.map((extra) => (
+            {category.extras.map((extra) => (
               <div key={extra.name} className="flex justify-between items-center text-sm">
                 <span>{extra.name}</span>
                 <span>+{extra.price}</span>
