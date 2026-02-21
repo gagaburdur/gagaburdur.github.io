@@ -269,24 +269,6 @@ export const menu: MenuCategory[] = [
     icon: "knife"
   },
   {
-    category: "TATLILAR",
-    items: [
-      {
-        name: "CHURROS",
-        description: "Churros, Çikolata Sos, Tarçın, Şeker",
-        price: 250,
-        allergens: a({ gluten: true, sut: true }),
-      },
-      {
-        name: "DONDURMA CHOUX",
-        description: "Vanilyalı Dondurma, Tahin, Karamelize Ceviz, Choux",
-        price: 250,
-        allergens: a({ gluten: true, sut: true }),
-      },
-    ],
-    icon: "cream"
-  },
-  {
     category: "TOSTLAR",
     items: [
       {
@@ -374,6 +356,24 @@ export const menu: MenuCategory[] = [
       },
     ],
     icon: "seaweed"
+  },
+  {
+    category: "TATLILAR",
+    items: [
+      {
+        name: "CHURROS",
+        description: "Churros, Çikolata Sos, Tarçın, Şeker",
+        price: 250,
+        allergens: a({ gluten: true, sut: true }),
+      },
+      {
+        name: "DONDURMA CHOUX",
+        description: "Vanilyalı Dondurma, Tahin, Karamelize Ceviz, Choux",
+        price: 250,
+        allergens: a({ gluten: true, sut: true }),
+      },
+    ],
+    icon: "cream"
   },
   {
     category: "SICAK İÇECEKLER",

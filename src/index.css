@@ -42,7 +42,7 @@
 
 html, body {
   background-color: #fffdf1;
-  background-image: url("./assets/pattern.webp");
+  background-image: url("/pattern.webp");
   background-repeat: repeat;
   background-position: center;
 }
