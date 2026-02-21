@@ -87,7 +87,7 @@ export const menu: MenuCategory[] = [
       {
         name: "NEW MEXICO BURGER",
         description:
-          "Acı Sos (Köz Kapyalı), Jalapeño Relish, Domates, Köfte, Acı Mayonez, Patates Kızartması, Dip Sos",
+          "Köz Kapyalı Acı Sos, Jalapeño Relish, Domates, Köfte, Acı Mayonez, Patates Kızartması, Dip Sos",
         price: 370,
         allergens: a({ gluten: true, susam: true, yumurta: true }),
       },
@@ -114,14 +114,14 @@ export const menu: MenuCategory[] = [
       {
         name: "CRISPY CHICKEN",
         description:
-          "Karamelize Soğan, Turşu, Kızarmış Tavuk, Cheddar, Burger Sos, Patates Kızartması, Dip Sos",
+          "Kızarmış Tavuk, Turşu, Burger Sos, Patates Kızartması, Dip Sos",
         price: 290,
         allergens: a({ gluten: true, susam: true, yumurta: true, sut: true }),
       },
       {
         name: "NEW MEXICO CHICKEN",
         description:
-          "Acı Sos (Köz Kapya), Jalapeño Relish, Kızarmış Tavuk, Acı Mayonez, Coleslaw, Patates Kızartması, Dip Sos",
+          "Köz Kapyalı Acı Sos, Jalapeño Relish, Kızarmış Tavuk, Acı Mayonez, Coleslaw, Patates Kızartması, Dip Sos",
         price: 290,
         allergens: a({ gluten: true, susam: true, yumurta: true }),
       },
