@@ -208,7 +208,7 @@ export const menu: MenuCategory[] = [
       {
         name: "PENNE ALFREDO",
         description:
-          "Mantar (Kestane ve İstiridye), Mor Soğan, Peynir, Tavuk, Krema",
+          "Mantar (Kestane ve İstiridye), Peynir, Tavuk, Krema",
         price: 300,
         allergens: a({ gluten: true, sut: true }),
       },
