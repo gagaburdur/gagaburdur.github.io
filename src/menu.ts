@@ -215,14 +215,14 @@ export const menu: MenuCategory[] = [
       {
         name: "PENNE NAPOLITEN",
         description:
-          "Napoliten Sos, Tulum Peyniri, Kaşar Peyniri, Çeri Domates",
+          "Napoliten Sos, Tulum Peyniri, Çeri Domates",
         price: 270,
         allergens: a({ gluten: true, sut: true }),
       },
       {
         name: "PENNE ARABIATTA",
         description:
-          "Arabiatta Sos, Dilim Zeytin, Jalapeño Turşusu, Çeri Domates, Kaşar Peyniri",
+          "Arabiatta Sos, Dilim Zeytin, Jalapeño Turşusu, Çeri Domates, Tulum Peyniri",
         price: 270,
         allergens: a({ gluten: true, sut: true }),
       },
