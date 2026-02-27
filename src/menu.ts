@@ -254,7 +254,7 @@ export const menu: MenuCategory[] = [
         allergens: a({ gluten: true }),
       },
       {
-        name: "CHICKEN WRAP",
+        name: "TAVUK WRAP",
         description: "Izgara, Krema, Renkli Biberler, Domates, Kaşar Peyniri, Patates Kızartması, Dip Sos",
         price: 290,
         allergens: a({ gluten: true, sut: true }),
