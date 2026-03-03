@@ -103,6 +103,7 @@ export const menu: MenuCategory[] = [
       { name: "EKSTRA KÖFTE", price: 150 },
       { name: "PASTIRMA", price: 40 },
       { name: "MANTAR", price: 30 },
+      { name: "SOĞAN", price: 30 },
       { name: "ANANAS", price: 30 },
       { name: "YUMURTA", price: 30 },
       { name: "CHEDDAR", price: 20 },
@@ -136,6 +137,7 @@ export const menu: MenuCategory[] = [
     extras: [
       { name: "PASTIRMA", price: 40 },
       { name: "MANTAR", price: 30 },
+      { name: "SOĞAN", price: 30 },
       { name: "ANANAS", price: 30 },
       { name: "CHEDDAR", price: 20 },
     ],
