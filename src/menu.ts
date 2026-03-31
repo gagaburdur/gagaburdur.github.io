@@ -74,6 +74,20 @@ export const menu: MenuCategory[] = [
         name: "CHEESEBURGER",
         description:
           "Karamelize Soğan, Turşu, Köfte, Cheddar, Burger Sos, Patates Kızartması, Dip Sos",
+        price: 350,
+        allergens: a({
+          gluten: true,
+          susam: true,
+          yumurta: true,
+          hardal: true,
+          sut: true,
+          soya: true,
+        }),
+      },
+      {
+        name: "SUPERBURGER",
+        description:
+          "Karamelize Soğan, Karamelize Mantar, Turşu, Köfte, Cheddar, Burger Sos, Patates Kızartması, Dip Sos",
         price: 360,
         allergens: a({
           gluten: true,
@@ -130,6 +144,13 @@ export const menu: MenuCategory[] = [
         name: "CHEESE CHICKEN",
         description:
           "Burger Sos, Marul, Turşu, Domates, Tavuk Fileto, Cheddar Peyniri, Patates Kızartması, Dip Sos",
+        price: 240,
+        allergens: a({ gluten: true, susam: true, yumurta: true, sut: true }),
+      },
+      {
+        name: "SUPER CHICKEN",
+        description:
+          "Karamelize Soğan, Karamelize Mantar, Turşu, Tavuk Fileto, Cheddar Peyniri, Burger Sos, Patates Kızartması, Dip Sos",
         price: 260,
         allergens: a({ gluten: true, susam: true, yumurta: true, sut: true }),
       },
