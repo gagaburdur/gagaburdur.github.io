@@ -526,12 +526,6 @@ export const menu: MenuCategory[] = [
         allergens: noAllergens,
       },
       {
-        name: "KARPUZLU LİMONATA (EV YAPIMI)",
-        description: "",
-        price: 120,
-        allergens: noAllergens,
-      },
-      {
         name: "SADE SODA",
         description: "",
         price: 40,
@@ -599,6 +593,48 @@ export const menu: MenuCategory[] = [
         description: "",
         price: 140,
         allergens: a({ sut: true }),
+      },
+    ],
+    icon: "cocktail"
+  },
+  {
+    category: "YAZ İÇECEKLERİ",
+    items: [
+      {
+        name: "KARPUZLU LİMONATA",
+        description: "",
+        price: 160,
+        allergens: noAllergens,
+      },
+      {
+        name: "COOL LIME",
+        description: "",
+        price: 160,
+        allergens: noAllergens,
+      },
+      {
+        name: "HIBISCUS TEA",
+        description: "",
+        price: 160,
+        allergens: noAllergens,
+      },
+      {
+        name: "ICE CHOCOLATE",
+        description: "",
+        price: 180,
+        allergens: a({ sut: true }),
+      },
+      {
+        name: "ICE CHOCOLATE CARAMEL",
+        description: "",
+        price: 180,
+        allergens: a({ sut: true }),
+      },
+      {
+        name: "GAGA DETOX",
+        description: "",
+        price: 160,
+        allergens: noAllergens,
       },
     ],
     icon: "cocktail"
