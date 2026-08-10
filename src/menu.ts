@@ -211,6 +211,12 @@ export const menu: MenuCategory[] = [
         allergens: a({ gluten: true, yumurta: true, sut: true }),
       },
       {
+        name: "SEZAR SALATA",
+        description: "Izgara Tavuk, Göbek Marul, Kruton, Sezar Sos",
+        price: 270,
+        allergens: a({ balik: true, gluten: true, yumurta: true, sut: true }),
+      },
+      {
         name: "PANCAR SALATA",
         description:
           "Fırınlanmış Pancar, Portakal, Mevsim Yeşilliği, Karamelize Ceviz, Tahin Portakal Vinegret",
