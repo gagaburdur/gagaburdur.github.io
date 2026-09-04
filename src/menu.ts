@@ -260,28 +260,28 @@ export const menu: MenuCategory[] = [
     icon: "pan"
   },
   {
-    category: "TACO",
+    category: "TAVALAR VE WRAPLER",
     items: [
       {
-        name: "CARNE ASADA",
+        name: "KREMALI MANTARLI TAVUK",
         description:
-          "Uzun Pişmiş Dana Eti, Peynir Sos, Guacamole, Acı Mayonez, Soğan Turşusu, Meksika Biberi, Yanında Limon",
-        price: 360,
-        allergens: a({ gluten: true, sut: true, yumurta: true }),
+          "200gr Tavuk, Mantar, Kekik, Biberiye, Patates Kızartması ve Yeşillik ile Servis Edilir",
+        price: 320,
+        allergens: a({ sut: true }),
       },
       {
-        name: "KARİDES TACO",
+        name: "KÖRİ SOSLU TAVUK",
         description:
-          "Tempura Karides, Sriracha Mayonez, Guacamole, Soğan Turşusu, Meksika Biberi, Yanında Limon",
-        price: 300,
-        allergens: a({ kabuklu: true, yumurta: true, gluten: true }),
+          "200gr Tavuk, Mantar, Renkli Biber, Köri Sosu, Patates Kızartması ve Yeşillik ile Servis Edilir",
+        price: 320,
+        allergens: a({ sut: true }),
       },
       {
-        name: "TAVUK TACO",
+        name: "SOYA SOSLU TAVUK",
         description:
-          "Izgara Tavuk, Köz Biber Sos, Guacamole, Jalapeño Relish, Köz Mısır, Soğan Turşusu, Meksika Biberi",
-        price: 300,
-        allergens: a({ gluten: true }),
+          "200gr Tavuk, Mantar, Renkli Biber, Soya Sosu, Patates Kızartması ve Yeşillik ile Servis Edilir",
+        price: 320,
+        allergens: a({ soya: true, gluten: true }),
       },
       {
         name: "TAVUK WRAP",
