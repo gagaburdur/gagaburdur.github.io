@@ -533,15 +533,6 @@ export const menu: MenuCategory[] = [
         allergens: noAllergens,
       },
       {
-<<<<<<< Updated upstream
-=======
-        name: "KARPUZLU LİMONATA (EV YAPIMI)",
-        description: "",
-        price: 140,
-        allergens: noAllergens,
-      },
-      {
->>>>>>> Stashed changes
         name: "SADE SODA",
         description: "",
         price: 40,
@@ -575,63 +566,39 @@ export const menu: MenuCategory[] = [
       {
         name: "ICED CAFFE AMERICANO",
         description: "Double Shot Espresso İçerir",
-<<<<<<< Updated upstream
         price: 220,
-=======
-        price: 140,
->>>>>>> Stashed changes
         allergens: noAllergens,
       },
       {
         name: "ICED CAFFE LATTE",
         description: "Double Shot Espresso İçerir",
-<<<<<<< Updated upstream
         price: 240,
-=======
-        price: 160,
->>>>>>> Stashed changes
         allergens: a({ sut: true }),
       },
       {
         name: "ICED CAFFE MOCHA",
         description:
           "Sütlü Çikolata veya Beyaz Çikolata, Double Shot Espresso İçerir",
-<<<<<<< Updated upstream
         price: 260,
-=======
-        price: 180,
->>>>>>> Stashed changes
         allergens: a({ sut: true }),
       },
       {
         name: "FRAPPE",
         description:
           "Granül Kahve, Buz, Süt ve Süt Köpüğü, İsteğe Göre Karamel ya da Vanilya Şurubu",
-<<<<<<< Updated upstream
         price: 200,
-=======
-        price: 160,
->>>>>>> Stashed changes
         allergens: a({ sut: true }),
       },
       {
         name: "FROZEN",
         description: "",
-<<<<<<< Updated upstream
         price: 220,
-=======
-        price: 160,
->>>>>>> Stashed changes
         allergens: noAllergens,
       },
       {
         name: "MILKSHAKE",
         description: "",
-<<<<<<< Updated upstream
         price: 220,
-=======
-        price: 160,
->>>>>>> Stashed changes
         allergens: a({ sut: true }),
       },
     ],
