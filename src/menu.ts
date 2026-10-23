@@ -459,7 +459,7 @@ export const menu: MenuCategory[] = [
       {
         name: "MACCHIATO",
         description: "",
-        price: 130,
+        price: 200,
         allergens: a({ sut: true }),
       },
       {
