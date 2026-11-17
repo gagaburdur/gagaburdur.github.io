@@ -62,7 +62,7 @@ export const menu: MenuCategory[] = [
         name: "HAMBURGER",
         description:
           "Burger Sos, Marul, Alman Turşusu, Soğan Turşusu, Domates, Köfte, Patates Kızartması, Dip Sos",
-        price: 340,
+        price: 360,
         allergens: a({
           gluten: true,
           susam: true,
@@ -74,7 +74,7 @@ export const menu: MenuCategory[] = [
         name: "CHEESEBURGER",
         description:
           "Karamelize Soğan, Turşu, Köfte, Cheddar, Burger Sos, Patates Kızartması, Dip Sos",
-        price: 350,
+        price: 370,
         allergens: a({
           gluten: true,
           susam: true,
@@ -88,7 +88,7 @@ export const menu: MenuCategory[] = [
         name: "SUPERBURGER",
         description:
           "Karamelize Soğan, Karamelize Mantar, Turşu, Köfte, Cheddar, Burger Sos, Patates Kızartması, Dip Sos",
-        price: 360,
+        price: 380,
         allergens: a({
           gluten: true,
           susam: true,
@@ -102,19 +102,19 @@ export const menu: MenuCategory[] = [
         name: "NEW MEXICO BURGER",
         description:
           "Köz Kapyalı Acı Sos, Jalapeño Relish, Marul, Domates, Köfte, Acı Mayonez, Patates Kızartması, Dip Sos",
-        price: 370,
+        price: 390,
         allergens: a({ gluten: true, susam: true, yumurta: true }),
       },
       {
         name: "FANTAZİ BURGER",
         description:
           "Uzun Pişmiş Dana Eti, Köfte, Peynir Sos, Roka, Patates Kızartması, Dip Sos",
-        price: 400,
+        price: 430,
         allergens: a({ gluten: true, susam: true, yumurta: true, sut: true }),
       },
     ],
     extras: [
-      { name: "EKSTRA KÖFTE", price: 150 },
+      { name: "EKSTRA KÖFTE", price: 160 },
       { name: "PASTIRMA", price: 40 },
       { name: "MANTAR", price: 30 },
       { name: "SOĞAN", price: 30 },
@@ -130,28 +130,28 @@ export const menu: MenuCategory[] = [
         name: "CRISPY CHICKEN",
         description:
           "Kızarmış Tavuk, Turşu, Coleslaw, Ballı Hardal, Patates Kızartması, Dip Sos",
-        price: 290,
+        price: 310,
         allergens: a({ gluten: true, susam: true, yumurta: true, sut: true }),
       },
       {
         name: "NEW MEXICO CHICKEN",
         description:
           "Köz Kapyalı Acı Sos, Jalapeño Relish, Kızarmış Tavuk, Acı Mayonez, Coleslaw, Patates Kızartması, Dip Sos",
-        price: 290,
+        price: 310,
         allergens: a({ gluten: true, susam: true, yumurta: true }),
       },
       {
         name: "CHEESE CHICKEN",
         description:
           "Burger Sos, Marul, Turşu, Domates, Tavuk Fileto, Cheddar Peyniri, Patates Kızartması, Dip Sos",
-        price: 240,
+        price: 260,
         allergens: a({ gluten: true, susam: true, yumurta: true, sut: true }),
       },
       {
         name: "SUPER CHICKEN",
         description:
           "Karamelize Soğan, Karamelize Mantar, Turşu, Tavuk Fileto, Cheddar Peyniri, Burger Sos, Patates Kızartması, Dip Sos",
-        price: 260,
+        price: 280,
         allergens: a({ gluten: true, susam: true, yumurta: true, sut: true }),
       },
     ],
@@ -170,13 +170,13 @@ export const menu: MenuCategory[] = [
       {
         name: "TON BALIKLI SANDVİÇ",
         description: "Ton Balığı, Mısır, Özel Sos",
-        price: 260,
+        price: 280,
         allergens: a({ gluten: true, susam: true, yumurta: true }),
       },
       {
         name: "PESTO TAVUK SANDVİÇ",
         description: "Pesto Sos, Mozarella, Roka, Tavuk Fileto, Kuru Domates",
-        price: 260,
+        price: 280,
         allergens: a({
           gluten: true,
           susam: true,
@@ -188,7 +188,7 @@ export const menu: MenuCategory[] = [
       {
         name: "HİNDİ FÜME SANDVİÇ",
         description: "Hindi Füme, Kaşar, Domates, Turşu, Roka, Mayonez",
-        price: 210,
+        price: 230,
         allergens: a({ gluten: true, susam: true, yumurta: true }),
       }
     ],
@@ -200,27 +200,27 @@ export const menu: MenuCategory[] = [
       {
         name: "KİNOA KARİDES TABULE",
         description: "Kinoalı Tabule, Taze Yeşillikler, Karides",
-        price: 270,
+        price: 290,
         allergens: a({ gluten: true, kabuklu: true }),
       },
       {
         name: "TAVUK SALATA",
         description:
           "Mevsim Yeşillikleri, Siyah Zeytin, Mısır Taneleri, Salatalık, Çeri Domates, Havuç, Kruton, Sezar Sos ve Izgara Tavuk",
-        price: 270,
+        price: 280,
         allergens: a({ gluten: true, yumurta: true, sut: true }),
       },
       {
         name: "SEZAR SALATA",
         description: "Izgara Tavuk, Göbek Marul, Kruton, Sezar Sos",
-        price: 270,
+        price: 280,
         allergens: a({ gluten: true, yumurta: true, sut: true }),
       },
       {
         name: "PANCAR SALATA",
         description:
           "Fırınlanmış Pancar, Portakal, Mevsim Yeşilliği, Karamelize Ceviz, Tahin Portakal Vinegret",
-        price: 270,
+        price: 300,
         allergens: a({ yemis: true, susam: true }),
       },
     ],
@@ -232,7 +232,7 @@ export const menu: MenuCategory[] = [
       {
         name: "PENNE BOLOGNESE",
         description: "Ev Yapımı Ragu, Tulum Peyniri, Kaşar Peyniri",
-        price: 340,
+        price: 360,
         allergens: a({ gluten: true, kereviz: true, sut: true }),
       },
       {
@@ -266,27 +266,27 @@ export const menu: MenuCategory[] = [
         name: "KREMALI MANTARLI TAVUK",
         description:
           "200gr Tavuk, Mantar, Kekik, Biberiye, Patates Kızartması ve Yeşillik ile Servis Edilir",
-        price: 320,
+        price: 340,
         allergens: a({ sut: true }),
       },
       {
         name: "KÖRİ SOSLU TAVUK",
         description:
           "200gr Tavuk, Mantar, Renkli Biber, Köri Sosu, Patates Kızartması ve Yeşillik ile Servis Edilir",
-        price: 320,
+        price: 340,
         allergens: a({ sut: true }),
       },
       {
         name: "SOYA SOSLU TAVUK",
         description:
           "200gr Tavuk, Mantar, Renkli Biber, Soya Sosu, Patates Kızartması ve Yeşillik ile Servis Edilir",
-        price: 320,
+        price: 340,
         allergens: a({ soya: true, gluten: true }),
       },
       {
         name: "TAVUK WRAP",
         description: "Izgara, Krema, Renkli Biberler, Domates, Kaşar Peyniri, Patates Kızartması, Dip Sos",
-        price: 290,
+        price: 310,
         allergens: a({ gluten: true, sut: true }),
       }
     ],
@@ -298,7 +298,7 @@ export const menu: MenuCategory[] = [
       {
         name: "SUPREME TAVUK",
         description: "Fırında Tavuk, Supreme Sos, Fırınlanmış Sebzeler",
-        price: 450,
+        price: 550,
         allergens: a({ sut: true }),
       },
     ],
@@ -311,14 +311,14 @@ export const menu: MenuCategory[] = [
         name: "PEYNİR SEVEN TOST",
         description:
           "Cheddar, Ezine, Kaşar Peyniri, Kızarmış Kabak, Domates Kurusu, Patates Kızartması, Dip Sos",
-        price: 250,
+        price: 270,
         allergens: a({ gluten: true, sut: true }),
       },
       {
         name: "KAVURMALI TOST",
         description:
           "Kavurma, Biber, Salça, Kaşar, Patates Kızartması, Dip Sos",
-        price: 350,
+        price: 390,
         allergens: a({ gluten: true, sut: true }),
       },
     ],
